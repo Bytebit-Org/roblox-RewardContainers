@@ -70,7 +70,7 @@ export class RecurringTimeLockedRewardContainer extends BaseRewardContainer {
 			rewardsContainerName: string,
 		) => Promise<void>,
 	) {
-		super(rewardedPlayer, rewardsOpeningCoordinator, signalFactory);
+		super(rewardedPlayer, rewardsOpeningCoordinator);
 
 		this.nextUnlockUnixTimestampChanged = signalFactory.createInstance();
 

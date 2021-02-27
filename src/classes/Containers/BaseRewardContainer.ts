@@ -1,5 +1,4 @@
-import { ISignal } from "@rbxts/signals-tooling";
-import { SignalFactory } from "factories/SignalFactory";
+import { ISignal, Signal } from "@rbxts/signals-tooling";
 import { IRewardContainer } from "interfaces/IRewardContainer";
 import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
 import { Reward } from "types/Reward";
@@ -12,9 +11,8 @@ export abstract class BaseRewardContainer implements IRewardContainer {
 	protected constructor(
 		protected readonly rewardedPlayer: Player,
 		private readonly rewardsOpeningCoordinator: IRewardsOpeningCoordinator,
-		signalFactory: SignalFactory,
 	) {
-		this.opened = signalFactory.createInstance();
+		this.opened = new Signal<(rewards: ReadonlyArray<Reward>) => void>();
 	}
 
 	public async openAsync() {

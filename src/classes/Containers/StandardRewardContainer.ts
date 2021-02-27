@@ -1,16 +1,15 @@
-import { SignalFactory } from "factories/SignalFactory";
 import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
 import { BaseRewardContainer } from "./BaseRewardContainer";
 
 export class StandardRewardContainer extends BaseRewardContainer {
 	private hasBeenOpened = false;
 
-	private constructor(rewardedPlayer: Player, rewardsOpeningCoordinator: IRewardsOpeningCoordinator, signalFactory: SignalFactory) {
-		super(rewardedPlayer, rewardsOpeningCoordinator, signalFactory);
+	private constructor(rewardedPlayer: Player, rewardsOpeningCoordinator: IRewardsOpeningCoordinator) {
+		super(rewardedPlayer, rewardsOpeningCoordinator);
 	}
 
 	public static create(this: void, rewardedPlayer: Player, rewardsOpeningCoordinator: IRewardsOpeningCoordinator) {
-		return new StandardRewardContainer(rewardedPlayer, rewardsOpeningCoordinator, new SignalFactory());
+		return new StandardRewardContainer(rewardedPlayer, rewardsOpeningCoordinator);
 	}
 
 	public canOpen() {

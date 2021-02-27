@@ -1,4 +1,3 @@
-import { SignalFactory } from "factories/SignalFactory";
 import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
 import { BaseRewardContainer } from "./BaseRewardContainer";
 
@@ -9,10 +8,9 @@ export class TimeLockedRewardContainer extends BaseRewardContainer {
 		private readonly dateTimeConstructor: DateTimeConstructor,
 		rewardedPlayer: Player,
 		rewardsOpeningCoordinator: IRewardsOpeningCoordinator,
-		signalFactory: SignalFactory,
 		public readonly unlockUnixTimestamp: number,
 	) {
-		super(rewardedPlayer, rewardsOpeningCoordinator, signalFactory);
+		super(rewardedPlayer, rewardsOpeningCoordinator);
 	}
 
 	public static create(
@@ -21,7 +19,7 @@ export class TimeLockedRewardContainer extends BaseRewardContainer {
 		rewardsOpeningCoordinator: IRewardsOpeningCoordinator,
 		unlockUnixTimestamp: number,
 	) {
-		return new TimeLockedRewardContainer(DateTime, rewardedPlayer, rewardsOpeningCoordinator, new SignalFactory(), unlockUnixTimestamp);
+		return new TimeLockedRewardContainer(DateTime, rewardedPlayer, rewardsOpeningCoordinator, unlockUnixTimestamp);
 	}
 
 	public canOpen() {
