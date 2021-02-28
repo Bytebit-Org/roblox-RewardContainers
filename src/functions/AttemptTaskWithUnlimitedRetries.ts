@@ -32,7 +32,7 @@ export function attemptTaskWithUnlimitedRetries(
 
 	let currentAttemptPromise: Promise<void> | undefined;
 
-	const postSimulationConnection = RunService.PostSimulation.Connect(() => {
+	const heartbeatConnection = RunService.Heartbeat.Connect(() => {
 		if (currentAttemptPromise !== undefined) {
 			return;
 		}
@@ -43,7 +43,7 @@ export function attemptTaskWithUnlimitedRetries(
 		}
 
 		currentAttemptPromise = attemptTaskAsync()
-			.then(() => postSimulationConnection.Disconnect())
+			.then(() => heartbeatConnection.Disconnect())
 			.catch((failureReason) => {
 				warn(
 					`Failure occurred during attempt of task "${taskName}". Failure reason: ${inspect(failureReason)}`,
