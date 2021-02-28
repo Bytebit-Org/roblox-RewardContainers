@@ -3,11 +3,20 @@ import { IRewardContainer } from "interfaces/IRewardContainer";
 import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
 import { Reward } from "types/Reward";
 
+/**
+ * An abstract class that provides the standard logic for opening a container
+ * Needs canOpen to be implemented by subclasses
+ */
 export abstract class BaseRewardContainer implements IRewardContainer {
 	public readonly opened: ISignal<(rewards: ReadonlyArray<Reward>) => void>;
 
 	private isOpening = false;
 
+	/**
+	 * Sets up the super properties
+	 * @param rewardedPlayer The player to associate with the reward container
+	 * @param rewardsOpeningCoordinator The opening coordinator to use upon opening
+	 */
 	protected constructor(
 		protected readonly rewardedPlayer: Player,
 		private readonly rewardsOpeningCoordinator: IRewardsOpeningCoordinator,

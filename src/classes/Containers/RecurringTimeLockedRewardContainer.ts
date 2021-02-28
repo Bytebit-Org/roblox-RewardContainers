@@ -48,11 +48,19 @@ const defaultPersister = {
 	},
 };
 
+/**
+ * A reward container that can be opened multiple times and persists its next unlock Unix timestamp between play sessions for each player
+ * Once opened the container will lock itself for a given period of time
+ * Useful for creating things like daily login reward systems
+ */
 export class RecurringTimeLockedRewardContainer extends BaseRewardContainer {
 	private readonly nextUnlockUnixTimestampChanged: ISignal;
 
 	private nextUnlockUnixTimestamp: number;
 
+	/**
+	 * Use the create method instead
+	 */
 	private constructor(
 		private readonly dateTimeConstructor: DateTimeConstructor,
 		private readonly name: string,
@@ -79,6 +87,16 @@ export class RecurringTimeLockedRewardContainer extends BaseRewardContainer {
 		this.loadUnlockUnixTimestampWithRetries();
 	}
 
+	/**
+	 * Used to create a new instance
+	 * @param this
+	 * @param name A name to use for logging purposes
+	 * @param recurrenceIntervalInSeconds The recurrence interval to use in between opening and unlocking
+	 * @param rewardedPlayer The player to associate with the reward container
+	 * @param rewardsOpeningCoordinator The opening coordinator to use upon opening
+	 * @param persister A persister that is used to load and save the unlock unix timestamp for the player for this reward container.
+	 * Note that if none is provided, a default one that uses DataStoreService will be used and for new players the reward container will be open immediately.
+	 */
 	public static create(
 		this: void,
 		name: string,
@@ -118,10 +136,17 @@ export class RecurringTimeLockedRewardContainer extends BaseRewardContainer {
 		return currentUnixTimestamp >= this.nextUnlockUnixTimestamp;
 	}
 
+	/**
+	 * Hooks up a handler function to run when the next unlock Unix timestamp changes
+	 * @param handler The function to run
+	 */
 	public connectToUnlockUnixTimestampChanges(handler: () => void) {
 		return this.nextUnlockUnixTimestampChanged.Connect(handler);
 	}
 
+	/**
+	 * Gets the next unlock Unix timestamp
+	 */
 	public getNextUnlockUnixTimestamp() {
 		return this.nextUnlockUnixTimestamp;
 	}

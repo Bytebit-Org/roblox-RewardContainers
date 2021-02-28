@@ -14,9 +14,22 @@ type AwardVirtualCurrencyAsyncFunction<CurrencyType extends string> = (
 	value: number,
 ) => Promise<void>;
 
+/**
+ * A generic implementation of a virtual currency reward granter
+ * - Requires a generic string union parameter to list the available currency types
+ * - Requires an async function to actually grant the virtual currency
+ */
 export class VirtualCurrencyRewardGranter<CurrencyType extends string> implements IRewardGranter {
+	/**
+	 * Use the create method instead
+	 */
 	private constructor(private readonly awardVirtualCurrencyAsync: AwardVirtualCurrencyAsyncFunction<CurrencyType>) {}
 
+	/**
+	 * Creates a new instance
+	 * @param this
+	 * @param awardVirtualCurrencyAsync An async function to actually grant the virtual currency
+	 */
 	public static create<CurrencyType extends string>(
 		this: void,
 		awardVirtualCurrencyAsync: AwardVirtualCurrencyAsyncFunction<CurrencyType>,
