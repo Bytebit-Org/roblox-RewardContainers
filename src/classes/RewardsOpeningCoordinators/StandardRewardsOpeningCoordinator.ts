@@ -21,7 +21,7 @@ export class StandardRewardsOpeningCoordinator implements IRewardsOpeningCoordin
 
 		await Promise.allSettled(
 			rewards.map(
-				reward =>
+				(reward) =>
 					new Promise<void>((resolve, reject) => {
 						const rewardGranter = this.rewardGrantersByRewardType.get(reward.type);
 						if (rewardGranter === undefined) {
@@ -31,7 +31,7 @@ export class StandardRewardsOpeningCoordinator implements IRewardsOpeningCoordin
 						rewardGranter
 							.grantRewardAsync(reward, rewardedPlayer)
 							.then(() => resolve())
-							.catch(reason => reject(reason));
+							.catch((reason) => reject(reason));
 					}),
 			),
 		);

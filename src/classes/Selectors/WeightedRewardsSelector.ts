@@ -37,7 +37,7 @@ export class WeightedRewardsSelector implements IRewardsSelector {
 		this.value = value;
 	}
 
-	public async selectRewardsAsync() {
+	public selectRewardsAsync() {
 		// cache current value since it is mutable
 		const maximumNumberOfRewards = this.maximumNumberOfRewards;
 
@@ -62,7 +62,7 @@ export class WeightedRewardsSelector implements IRewardsSelector {
 			const weightsSum = availableRewardOptionsSorted.reduce((sum, rewardOption) => sum + rewardOption.weight, 0);
 			const selectedRewardOptionRandomValue = this.random.NextInteger(1, weightsSum);
 			let weightsSeenSum = 0;
-			const selectedRewardOptionIndex = availableRewardOptionsSorted.findIndex(rewardOption => {
+			const selectedRewardOptionIndex = availableRewardOptionsSorted.findIndex((rewardOption) => {
 				const previousWeightsSeenSum = weightsSeenSum;
 				weightsSeenSum += rewardOption.weight;
 
@@ -81,6 +81,6 @@ export class WeightedRewardsSelector implements IRewardsSelector {
 			}
 		}
 
-		return selectedRewards;
+		return Promise.resolve(selectedRewards);
 	}
 }
