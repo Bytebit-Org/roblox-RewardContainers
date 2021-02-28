@@ -35,6 +35,7 @@
   },
   "dependencies": {
     "@rbxts/inspect": "^1.0.1",
+    "@rbxts/services": "^1.1.2",
     "@rbxts/signals-tooling": "^1.0.4"
   }
 }
