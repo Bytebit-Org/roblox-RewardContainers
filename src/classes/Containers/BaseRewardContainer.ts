@@ -29,7 +29,7 @@ export abstract class BaseRewardContainer implements IRewardContainer {
 
 		await this.rewardsOpeningCoordinator
 			.coordinateOpeningAsync(this.rewardedPlayer)
-			.then(rewards => this.opened.fire(rewards))
+			.then((rewards) => this.opened.fire(rewards))
 			.finally(() => {
 				this.isOpening = false;
 			});
