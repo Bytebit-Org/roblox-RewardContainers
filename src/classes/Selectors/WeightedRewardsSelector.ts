@@ -70,7 +70,11 @@ export class WeightedRewardsSelector implements IRewardsSelector {
 		this.value = value;
 	}
 
-	public selectRewardsAsync() {
+	public selectRewards() {
+		return this.selectRewardsAsync().expect();
+	}
+
+	public async selectRewardsAsync() {
 		// cache current value since it is mutable
 		const maximumNumberOfRewards = this.maximumNumberOfRewards;
 
@@ -114,6 +118,6 @@ export class WeightedRewardsSelector implements IRewardsSelector {
 			}
 		}
 
-		return Promise.resolve(selectedRewards);
+		return selectedRewards;
 	}
 }

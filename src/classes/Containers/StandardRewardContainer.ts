@@ -28,6 +28,10 @@ export class StandardRewardContainer extends BaseRewardContainer {
 		return !this.hasBeenOpened;
 	}
 
+	public open() {
+		this.openAsync().expect();
+	}
+
 	public async openAsync() {
 		// this superOpenPromise thing is to get around a compiler bug
 		// https://github.com/roblox-ts/roblox-ts/issues/1266

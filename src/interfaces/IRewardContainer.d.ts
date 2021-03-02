@@ -21,5 +21,10 @@ export interface IRewardContainer {
 	/**
 	 * Runs the process of opening the container, including selecting and granting the rewards to the associated player
 	 */
+	open(): void;
+
+	/**
+	 * Asynchronously runs the process of opening the container, including selecting and granting the rewards to the associated player
+	 */
 	openAsync(): Promise<void>;
 }

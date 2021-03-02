@@ -63,16 +63,20 @@ export class RepeatingSeriesRewardsSelector implements IRewardsSelector {
 		this.seriesIndex = newValue;
 	}
 
-	public selectRewardsAsync() {
+	public selectRewards() {
+		return this.selectRewardsAsync().expect();
+	}
+
+	public async selectRewardsAsync() {
 		// cache current value since it is mutable
 		const seriesIndex = this.seriesIndex;
 
 		for (const rewardsSeriesEntry of this.rewardsSeriesEntriesSorted) {
 			if (seriesIndex % rewardsSeriesEntry.modulusValue === 0) {
-				return Promise.resolve(rewardsSeriesEntry.rewards);
+				return rewardsSeriesEntry.rewards;
 			}
 		}
 
-		return Promise.resolve(this.defaultRewards);
+		return this.defaultRewards;
 	}
 }

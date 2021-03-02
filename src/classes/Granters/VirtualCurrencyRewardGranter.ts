@@ -37,6 +37,10 @@ export class VirtualCurrencyRewardGranter<CurrencyType extends string> implement
 		return new VirtualCurrencyRewardGranter(awardVirtualCurrencyAsync);
 	}
 
+	public grantReward(reward: Reward, rewardedPlayer: Player) {
+		return this.grantRewardAsync(reward, rewardedPlayer).expect();
+	}
+
 	public async grantRewardAsync(reward: Reward, rewardedPlayer: Player) {
 		if (!isAVirtualCurrencyReward<CurrencyType>(reward)) {
 			throw `Invalid reward. Expected a Virtual Currency reward, got a reward of type "${reward.type}"`;

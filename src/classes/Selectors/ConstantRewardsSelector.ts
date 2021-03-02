@@ -19,6 +19,10 @@ export class ConstantRewardsSelector implements IRewardsSelector {
 		return new ConstantRewardsSelector(rewards);
 	}
 
+	public selectRewards() {
+		return this.selectRewardsAsync().expect();
+	}
+
 	public selectRewardsAsync() {
 		return Promise.resolve(this.rewards);
 	}

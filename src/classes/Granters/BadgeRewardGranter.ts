@@ -24,6 +24,10 @@ export class BadgeRewardGranter implements IRewardGranter {
 		return new BadgeRewardGranter(BadgeService);
 	}
 
+	public grantReward(reward: Reward, rewardedPlayer: Player) {
+		return this.grantRewardAsync(reward, rewardedPlayer).expect();
+	}
+
 	public async grantRewardAsync(reward: Reward, rewardedPlayer: Player) {
 		if (!isABadgeReward(reward)) {
 			throw `Invalid reward. Expected a Virtual Currency reward, got a reward of type "${reward.type}"`;

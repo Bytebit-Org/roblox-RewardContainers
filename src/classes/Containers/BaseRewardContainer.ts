@@ -25,7 +25,11 @@ export abstract class BaseRewardContainer implements IRewardContainer {
 		this.opened = new Signal<(rewards: ReadonlyArray<Reward>) => void>();
 	}
 
-	public async openAsync(this: BaseRewardContainer) {
+	public open() {
+		this.openAsync().expect();
+	}
+
+	public async openAsync() {
 		if (!this.canOpen()) {
 			throw `Attempted to open rewards container of type ${getmetatable(this)} which is not yet ready to open.`;
 		}

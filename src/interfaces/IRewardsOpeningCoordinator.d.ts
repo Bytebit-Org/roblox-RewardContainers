@@ -6,8 +6,15 @@ import { Reward } from "types/Reward";
  */
 export interface IRewardsOpeningCoordinator {
 	/**
-	 * Coordinates opening rewards
-	 * This means that it will select the rewards and grant them to the player
+	 * Coordinates opening rewards.
+	 * This means that it will select the rewards and grant them to the player.
+	 * @param rewardedPlayer The player to give the rewards to upon opening
+	 */
+	coordinateOpening(rewardedPlayer: Player): ReadonlyArray<Reward>;
+
+	/**
+	 * Asynchronously coordinates opening rewards.
+	 * This means that it will select the rewards and grant them to the player.
 	 * @param rewardedPlayer The player to give the rewards to upon opening
 	 */
 	coordinateOpeningAsync(rewardedPlayer: Player): Promise<ReadonlyArray<Reward>>;

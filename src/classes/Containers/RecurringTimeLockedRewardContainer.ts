@@ -151,6 +151,10 @@ export class RecurringTimeLockedRewardContainer extends BaseRewardContainer {
 		return this.nextUnlockUnixTimestamp;
 	}
 
+	public open() {
+		this.openAsync().expect();
+	}
+
 	public async openAsync() {
 		// this superOpenPromise thing is to get around a compiler bug
 		// https://github.com/roblox-ts/roblox-ts/issues/1266

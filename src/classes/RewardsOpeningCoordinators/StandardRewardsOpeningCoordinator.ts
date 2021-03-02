@@ -29,6 +29,10 @@ export class StandardRewardsOpeningCoordinator implements IRewardsOpeningCoordin
 		return new StandardRewardsOpeningCoordinator(rewardsSelector, rewardGrantersByRewardType);
 	}
 
+	public coordinateOpening(rewardedPlayer: Player) {
+		return this.coordinateOpeningAsync(rewardedPlayer).expect();
+	}
+
 	public async coordinateOpeningAsync(rewardedPlayer: Player) {
 		const rewards = await this.rewardsSelector.selectRewardsAsync();
 
