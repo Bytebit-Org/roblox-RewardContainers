@@ -9,6 +9,7 @@ import { Reward } from "types/Reward";
  */
 export abstract class BaseRewardContainer implements IRewardContainer {
 	public readonly opened: ISignal<(rewards: ReadonlyArray<Reward>) => void>;
+	public callback: () => string = () => "hi";
 
 	private isOpening = false;
 
@@ -24,14 +25,13 @@ export abstract class BaseRewardContainer implements IRewardContainer {
 		this.opened = new Signal<(rewards: ReadonlyArray<Reward>) => void>();
 	}
 
-	public async openAsync() {
+	public async openAsync(this: BaseRewardContainer) {
 		if (!this.canOpen()) {
 			throw `Attempted to open rewards container of type ${getmetatable(this)} which is not yet ready to open.`;
 		}
 
 		if (this.isOpening) {
-			warn(`Attempt to open rewards container multiple times simultaneously`);
-			return;
+			throw `Attempt to open rewards container multiple times simultaneously`;
 		}
 
 		this.isOpening = true;

@@ -37,7 +37,7 @@
     "typescript": "^4.2.2"
   },
   "dependencies": {
-    "@rbxts/fitumi": "^1.0.7",
+    "@rbxts/fitumi": "^1.0.8",
     "@rbxts/inspect": "^1.0.1",
     "@rbxts/services": "^1.1.2",
     "@rbxts/signals-tooling": "^1.0.4",
