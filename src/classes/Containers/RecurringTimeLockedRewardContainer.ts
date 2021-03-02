@@ -54,14 +54,14 @@ const defaultPersister = {
  * Useful for creating things like daily login reward systems
  */
 export class RecurringTimeLockedRewardContainer extends BaseRewardContainer {
-	private readonly nextUnlockUnixTimestampChanged: ISignal;
-
 	private nextUnlockUnixTimestamp: number;
+	private readonly nextUnlockUnixTimestampChanged: ISignal;
 
 	/**
 	 * Use the create method instead
+	 * Set to protected only for unit testing
 	 */
-	private constructor(
+	protected constructor(
 		private readonly dateTimeConstructor: DateTimeConstructor,
 		private readonly name: string,
 		private readonly recurrenceIntervalInSeconds: number,
