@@ -1,4 +1,4 @@
-import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
+import { IRewardsOpeningCoordinator } from "../../interfaces/IRewardsOpeningCoordinator";
 import { BaseRewardContainer } from "./BaseRewardContainer";
 
 /**
@@ -8,6 +8,7 @@ export class StandardRewardContainer extends BaseRewardContainer {
 	private hasBeenOpened = false;
 
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(rewardedPlayer: Player, rewardsOpeningCoordinator: IRewardsOpeningCoordinator) {

@@ -1,7 +1,7 @@
 import { BadgeService } from "@rbxts/services";
-import { IRewardGranter } from "interfaces/IRewardGranter";
-import { BadgeReward } from "types/BadgeReward";
-import { Reward } from "types/Reward";
+import { IRewardGranter } from "../../interfaces/IRewardGranter";
+import { BadgeReward } from "../../types/BadgeReward";
+import { Reward } from "../../types/Reward";
 
 function isABadgeReward(reward: Reward): reward is BadgeReward {
 	return reward.type === "Badge";
@@ -12,6 +12,7 @@ function isABadgeReward(reward: Reward): reward is BadgeReward {
  */
 export class BadgeRewardGranter implements IRewardGranter {
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(private readonly badgeService: BadgeService) {}

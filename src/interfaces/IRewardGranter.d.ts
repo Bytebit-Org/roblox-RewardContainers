@@ -1,4 +1,4 @@
-import { Reward } from "types/Reward";
+import { Reward } from "../types/Reward";
 
 /**
  * Provides the interface for granting a reward of a certain type to a player

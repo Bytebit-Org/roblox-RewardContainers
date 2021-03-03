@@ -1,6 +1,6 @@
-import { IRewardGranter } from "interfaces/IRewardGranter";
-import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
-import { IRewardsSelector } from "interfaces/IRewardsSelector";
+import { IRewardGranter } from "../../interfaces/IRewardGranter";
+import { IRewardsOpeningCoordinator } from "../../interfaces/IRewardsOpeningCoordinator";
+import { IRewardsSelector } from "../../interfaces/IRewardsSelector";
 
 /**
  * A standard rewards opening coordinator.
@@ -8,6 +8,7 @@ import { IRewardsSelector } from "interfaces/IRewardsSelector";
  */
 export class StandardRewardsOpeningCoordinator implements IRewardsOpeningCoordinator {
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(
@@ -18,13 +19,13 @@ export class StandardRewardsOpeningCoordinator implements IRewardsOpeningCoordin
 	/**
 	 * Creates a new instance
 	 * @param this
-	 * @param rewardsSelector The rewards selector to use when coordinating a new opening sequence
 	 * @param rewardGrantersByRewardType The reward granters to use keyed by the type of reward that they grant
+	 * @param rewardsSelector The rewards selector to use when coordinating a new opening sequence
 	 */
 	public static create(
 		this: void,
-		rewardsSelector: IRewardsSelector,
 		rewardGrantersByRewardType: ReadonlyMap<string, IRewardGranter>,
+		rewardsSelector: IRewardsSelector,
 	) {
 		return new StandardRewardsOpeningCoordinator(rewardsSelector, rewardGrantersByRewardType);
 	}

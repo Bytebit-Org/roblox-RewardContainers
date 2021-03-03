@@ -6,7 +6,7 @@ import fitumi from "@rbxts/fitumi";
 import { a } from "@rbxts/fitumi";
 import { HttpService } from "@rbxts/services";
 import { IRewardsOpeningCoordinator } from "index";
-import { Reward } from "types/Reward";
+import { Reward } from "../../types/Reward";
 import { BaseRewardContainer } from "./BaseRewardContainer";
 
 class UnitTestableBaseRewardContainer extends BaseRewardContainer {

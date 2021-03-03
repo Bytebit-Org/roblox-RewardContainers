@@ -1,7 +1,7 @@
 import { ISignal, Signal } from "@rbxts/signals-tooling";
-import { IRewardContainer } from "interfaces/IRewardContainer";
-import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
-import { Reward } from "types/Reward";
+import { IRewardContainer } from "../../interfaces/IRewardContainer";
+import { IRewardsOpeningCoordinator } from "../../interfaces/IRewardsOpeningCoordinator";
+import { Reward } from "../../types/Reward";
 
 /**
  * An abstract class that provides the standard logic for opening a container

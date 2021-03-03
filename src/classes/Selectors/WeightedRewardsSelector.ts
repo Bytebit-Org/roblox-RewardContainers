@@ -1,19 +1,42 @@
-import { IRewardsSelector } from "interfaces/IRewardsSelector";
-import { Reward } from "types/Reward";
+import { IRewardsSelector } from "../../interfaces/IRewardsSelector";
+import { Reward } from "../../types/Reward";
 
 type RewardOption = {
-	/** Whether the reward option can be used multiple times in one rewards selection (i.e. whether to sample with replacement) */
-	canBeDuplicated: boolean;
+	/**
+	 * Whether the reward option can be used multiple times in one rewards selection (i.e. whether to sample with replacement)
+	 * @default true
+	 */
+	canBeDuplicated?: boolean;
 
-	/** The cost of the reward option, to be subtracted from the remaining value for the list of rewards being selected */
-	cost: number;
+	/**
+	 * The cost of the reward option, to be subtracted from the remaining value for the list of rewards being selected
+	 * @default 1
+	 */
+	cost?: number;
 
 	/** The reward that the option gives */
 	reward: Reward;
 
-	/** The weight assigned to this option in the random distribution */
-	weight: number;
+	/**
+	 * The weight assigned to this option in the random distribution
+	 * @default 1
+	 */
+	weight?: number;
 };
+
+function fillInOptionDefaults(options: ReadonlyArray<RewardOption>) {
+	const filledInOptions = new Array<Required<RewardOption>>();
+	for (const option of options) {
+		filledInOptions.push({
+			canBeDuplicated: option.canBeDuplicated !== false,
+			cost: option.cost ?? 1,
+			reward: option.reward,
+			weight: option.weight ?? 1,
+		});
+	}
+
+	return filledInOptions;
+}
 
 /**
  * A rewards selector that selects a list of rewards based on a weighted random sample and allowing up to a given value in the total list.
@@ -24,12 +47,13 @@ type RewardOption = {
  */
 export class WeightedRewardsSelector implements IRewardsSelector {
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(
 		private maximumNumberOfRewards: number,
 		private readonly random: Random,
-		private readonly rewardOptionsSorted: ReadonlyArray<RewardOption>,
+		private readonly rewardOptionsSorted: ReadonlyArray<Required<RewardOption>>,
 		private value: number,
 	) {}
 
@@ -37,21 +61,23 @@ export class WeightedRewardsSelector implements IRewardsSelector {
 	 * Creates a new instance
 	 * @param this
 	 * @param maximumNumberOfRewards The maximum number of rewards that can be granted in one list. Use math.huge to ignore.
-	 * @param random A random instance.
 	 * @param rewardOptions The reward options to randomly sample when selecting a new list.
 	 * @param value The maximum value of any selected list of rewards as a sum of their reward options cost.
+	 * @param random A Random instance. Optional. If not provided then a default new Random instance will be created.
 	 */
 	public static create(
 		this: void,
 		maximumNumberOfRewards: number,
-		random: Random,
 		rewardOptions: ReadonlyArray<RewardOption>,
 		value: number,
+		random?: Random,
 	) {
-		const rewardOptionsSorted = [...rewardOptions];
+		const filledInRewardOptions = fillInOptionDefaults(rewardOptions);
+
+		const rewardOptionsSorted = [...filledInRewardOptions];
 		table.sort(rewardOptionsSorted, (a, b) => a.cost < b.cost);
 
-		return new WeightedRewardsSelector(maximumNumberOfRewards, random, rewardOptionsSorted, value);
+		return new WeightedRewardsSelector(maximumNumberOfRewards, random ?? new Random(), rewardOptionsSorted, value);
 	}
 
 	/**
