@@ -1,6 +1,6 @@
-import { IRewardGranter } from "interfaces/IRewardGranter";
-import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
-import { IRewardsSelector } from "interfaces/IRewardsSelector";
+import { IRewardGranter } from "../../interfaces/IRewardGranter";
+import { IRewardsOpeningCoordinator } from "../../interfaces/IRewardsOpeningCoordinator";
+import { IRewardsSelector } from "../../interfaces/IRewardsSelector";
 
 /**
  * A standard rewards opening coordinator.

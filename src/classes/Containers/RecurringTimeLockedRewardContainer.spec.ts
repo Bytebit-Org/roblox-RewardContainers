@@ -5,8 +5,8 @@
 import fitumi from "@rbxts/fitumi";
 import { a } from "@rbxts/fitumi";
 import { HttpService, RunService } from "@rbxts/services";
-import { SignalFactory } from "factories/SignalFactory";
-import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
+import { SignalFactory } from "../../factories/SignalFactory";
+import { IRewardsOpeningCoordinator } from "../../interfaces/IRewardsOpeningCoordinator";
 import { RecurringTimeLockedRewardContainer } from "./RecurringTimeLockedRewardContainer";
 
 function createDefaultRewardsOpeningCoordinator() {

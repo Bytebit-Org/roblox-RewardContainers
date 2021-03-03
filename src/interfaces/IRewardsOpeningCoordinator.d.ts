@@ -1,4 +1,4 @@
-import { Reward } from "types/Reward";
+import { Reward } from "../types/Reward";
 
 /**
  * Provides the interface for coordinating the opening of rewards

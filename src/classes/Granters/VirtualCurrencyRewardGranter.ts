@@ -1,6 +1,6 @@
-import { IRewardGranter } from "interfaces/IRewardGranter";
-import { Reward } from "types/Reward";
-import { VirtualCurrencyReward } from "types/VirtualCurrencyReward";
+import { IRewardGranter } from "../../interfaces/IRewardGranter";
+import { Reward } from "../../types/Reward";
+import { VirtualCurrencyReward } from "../../types/VirtualCurrencyReward";
 
 function isAVirtualCurrencyReward<CurrencyType extends string>(
 	reward: Reward,

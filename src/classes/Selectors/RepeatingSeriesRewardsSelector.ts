@@ -1,5 +1,5 @@
-import { IRewardsSelector } from "interfaces/IRewardsSelector";
-import { Reward } from "types/Reward";
+import { IRewardsSelector } from "../../interfaces/IRewardsSelector";
+import { Reward } from "../../types/Reward";
 
 type RewardsSeriesEntry = {
 	modulusValue: number;

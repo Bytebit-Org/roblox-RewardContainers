@@ -1,4 +1,4 @@
-import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
+import { IRewardsOpeningCoordinator } from "../../interfaces/IRewardsOpeningCoordinator";
 import { BaseRewardContainer } from "./BaseRewardContainer";
 
 /**

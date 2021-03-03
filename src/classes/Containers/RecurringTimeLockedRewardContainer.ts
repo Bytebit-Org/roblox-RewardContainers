@@ -1,9 +1,9 @@
 import inspect from "@rbxts/inspect";
 import { DataStoreService } from "@rbxts/services";
 import { ISignal } from "@rbxts/signals-tooling";
-import { SignalFactory } from "factories/SignalFactory";
-import { attemptTaskWithUnlimitedRetries } from "functions/AttemptTaskWithUnlimitedRetries";
-import { IRewardsOpeningCoordinator } from "interfaces/IRewardsOpeningCoordinator";
+import { SignalFactory } from "../../factories/SignalFactory";
+import { attemptTaskWithUnlimitedRetries } from "../../functions/AttemptTaskWithUnlimitedRetries";
+import { IRewardsOpeningCoordinator } from "../../interfaces/IRewardsOpeningCoordinator";
 import { BaseRewardContainer } from "./BaseRewardContainer";
 
 function generateKey(player: Player, rewardsContainerName: string) {

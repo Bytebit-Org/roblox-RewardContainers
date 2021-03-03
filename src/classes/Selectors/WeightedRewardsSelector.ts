@@ -1,5 +1,5 @@
-import { IRewardsSelector } from "interfaces/IRewardsSelector";
-import { Reward } from "types/Reward";
+import { IRewardsSelector } from "../../interfaces/IRewardsSelector";
+import { Reward } from "../../types/Reward";
 
 type RewardOption = {
 	/** Whether the reward option can be used multiple times in one rewards selection (i.e. whether to sample with replacement) */

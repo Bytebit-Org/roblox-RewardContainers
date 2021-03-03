@@ -1,5 +1,5 @@
-import { IRewardsSelector } from "interfaces/IRewardsSelector";
-import { Reward } from "types/Reward";
+import { IRewardsSelector } from "../../interfaces/IRewardsSelector";
+import { Reward } from "../../types/Reward";
 
 /**
  * A simple rewards selector that selects the same set of rewards every time

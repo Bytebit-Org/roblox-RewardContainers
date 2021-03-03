@@ -1,5 +1,5 @@
 import { IReadOnlySignal } from "@rbxts/signals-tooling";
-import { Reward } from "types/Reward";
+import { Reward } from "../types/Reward";
 
 /**
  * Provides the interface for a reward container
