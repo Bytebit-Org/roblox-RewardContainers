@@ -1,6 +1,6 @@
 {
   "name": "@rbxts/reward-containers",
-  "version": "0.0.1-beta.9",
+  "version": "1.0.0",
   "description": "A generic, type-safe library for Roblox game development, written using roblox-ts, for granting rewards to players through containers.",
   "main": "out/init.lua",
   "scripts": {
