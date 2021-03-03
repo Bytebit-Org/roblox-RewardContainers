@@ -72,6 +72,7 @@ const rewardsSelector = WeightedRewardsSelector.create(
             weight: 20,
         },
     ],
+    1, // value
 )
 ```
 
