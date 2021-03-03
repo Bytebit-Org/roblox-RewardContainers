@@ -37,7 +37,7 @@ Increments the series index by one
 
 **Returns:** *void*
 
-Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:54](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L54)
+Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:55](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L55)
 
 ___
 
@@ -51,7 +51,7 @@ Selects a list of rewards
 
 Implementation of: [IRewardsSelector](../interfaces/irewardsselector.md)
 
-Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:66](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L66)
+Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:67](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L67)
 
 ___
 
@@ -65,7 +65,7 @@ Asynchronously selects a list of rewards
 
 Implementation of: [IRewardsSelector](../interfaces/irewardsselector.md)
 
-Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:70](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L70)
+Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:71](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L71)
 
 ___
 
@@ -83,7 +83,7 @@ Name | Type | Description |
 
 **Returns:** *void*
 
-Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:62](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L62)
+Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:63](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L63)
 
 ___
 
@@ -103,4 +103,4 @@ Name | Type | Description |
 
 **Returns:** [*RepeatingSeriesRewardsSelector*](repeatingseriesrewardsselector.md)
 
-Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:39](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L39)
+Defined in: [src/classes/Selectors/RepeatingSeriesRewardsSelector.ts:40](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Selectors/RepeatingSeriesRewardsSelector.ts#L40)

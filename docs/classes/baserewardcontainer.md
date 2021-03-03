@@ -54,7 +54,7 @@ Name | Type | Description |
 
 **Returns:** [*BaseRewardContainer*](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:14](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L14)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:14](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L14)
 
 ## Properties
 
@@ -68,9 +68,9 @@ Defined in: [src/classes/Containers/BaseRewardContainer.ts:14](https://github.co
 
 **Returns:** *string*
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L12)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L12)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L12)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L12)
 
 ___
 
@@ -83,7 +83,7 @@ Some reward container implementations may open more than once
 
 Implementation of: [IRewardContainer](../interfaces/irewardcontainer.md).[opened](../interfaces/irewardcontainer.md#opened)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:11](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L11)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:11](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L11)
 
 ___
 
@@ -103,7 +103,7 @@ Returns whether the reward container is ready to open
 
 Implementation of: [IRewardContainer](../interfaces/irewardcontainer.md)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:51](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L51)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:51](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L51)
 
 ___
 
@@ -117,7 +117,7 @@ Runs the process of opening the container, including selecting and granting the 
 
 Implementation of: [IRewardContainer](../interfaces/irewardcontainer.md)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:28](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L28)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:28](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L28)
 
 ___
 
@@ -131,4 +131,4 @@ Asynchronously runs the process of opening the container, including selecting an
 
 Implementation of: [IRewardContainer](../interfaces/irewardcontainer.md)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:32](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L32)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:32](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L32)

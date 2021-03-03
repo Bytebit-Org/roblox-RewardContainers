@@ -33,7 +33,7 @@ Name | Type | Description |
 
 **Returns:** readonly [*Reward*](../README.md#reward)<string\>[]
 
-Defined in: [src/interfaces/IRewardsOpeningCoordinator.d.ts:13](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardsOpeningCoordinator.d.ts#L13)
+Defined in: [src/interfaces/IRewardsOpeningCoordinator.d.ts:13](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardsOpeningCoordinator.d.ts#L13)
 
 ___
 
@@ -52,4 +52,4 @@ Name | Type | Description |
 
 **Returns:** *Promise*<readonly [*Reward*](../README.md#reward)<string\>[]\>
 
-Defined in: [src/interfaces/IRewardsOpeningCoordinator.d.ts:20](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardsOpeningCoordinator.d.ts#L20)
+Defined in: [src/interfaces/IRewardsOpeningCoordinator.d.ts:20](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardsOpeningCoordinator.d.ts#L20)

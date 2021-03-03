@@ -6,6 +6,7 @@ import { Reward } from "../../types/Reward";
  */
 export class ConstantRewardsSelector implements IRewardsSelector {
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(private readonly rewards: ReadonlyArray<Reward>) {}

@@ -36,7 +36,7 @@ Name | Type |
 
 Implementation of: [IRewardsOpeningCoordinator](../interfaces/irewardsopeningcoordinator.md)
 
-Defined in: [src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts:32](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts#L32)
+Defined in: [src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts:33](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts#L33)
 
 ___
 
@@ -57,13 +57,13 @@ Name | Type |
 
 Implementation of: [IRewardsOpeningCoordinator](../interfaces/irewardsopeningcoordinator.md)
 
-Defined in: [src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts:36](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts#L36)
+Defined in: [src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts:37](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts#L37)
 
 ___
 
 ### create
 
-▸ `Static`**create**(`rewardsSelector`: [*IRewardsSelector*](../interfaces/irewardsselector.md), `rewardGrantersByRewardType`: *ReadonlyMap*<string, [*IRewardGranter*](../interfaces/irewardgranter.md)\>): [*StandardRewardsOpeningCoordinator*](standardrewardsopeningcoordinator.md)
+▸ `Static`**create**(`rewardGrantersByRewardType`: *ReadonlyMap*<string, [*IRewardGranter*](../interfaces/irewardgranter.md)\>, `rewardsSelector`: [*IRewardsSelector*](../interfaces/irewardsselector.md)): [*StandardRewardsOpeningCoordinator*](standardrewardsopeningcoordinator.md)
 
 Creates a new instance
 
@@ -71,9 +71,9 @@ Creates a new instance
 
 Name | Type | Description |
 :------ | :------ | :------ |
-`rewardsSelector` | [*IRewardsSelector*](../interfaces/irewardsselector.md) | The rewards selector to use when coordinating a new opening sequence   |
-`rewardGrantersByRewardType` | *ReadonlyMap*<string, [*IRewardGranter*](../interfaces/irewardgranter.md)\> | The reward granters to use keyed by the type of reward that they grant    |
+`rewardGrantersByRewardType` | *ReadonlyMap*<string, [*IRewardGranter*](../interfaces/irewardgranter.md)\> | The reward granters to use keyed by the type of reward that they grant   |
+`rewardsSelector` | [*IRewardsSelector*](../interfaces/irewardsselector.md) | The rewards selector to use when coordinating a new opening sequence    |
 
 **Returns:** [*StandardRewardsOpeningCoordinator*](standardrewardsopeningcoordinator.md)
 
-Defined in: [src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts:24](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts#L24)
+Defined in: [src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts:25](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/RewardsOpeningCoordinators/StandardRewardsOpeningCoordinator.ts#L25)

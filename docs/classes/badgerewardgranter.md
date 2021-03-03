@@ -35,7 +35,7 @@ Name | Type |
 
 Implementation of: [IRewardGranter](../interfaces/irewardgranter.md)
 
-Defined in: [src/classes/Granters/BadgeRewardGranter.ts:27](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Granters/BadgeRewardGranter.ts#L27)
+Defined in: [src/classes/Granters/BadgeRewardGranter.ts:28](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Granters/BadgeRewardGranter.ts#L28)
 
 ___
 
@@ -56,7 +56,7 @@ Name | Type |
 
 Implementation of: [IRewardGranter](../interfaces/irewardgranter.md)
 
-Defined in: [src/classes/Granters/BadgeRewardGranter.ts:31](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Granters/BadgeRewardGranter.ts#L31)
+Defined in: [src/classes/Granters/BadgeRewardGranter.ts:32](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Granters/BadgeRewardGranter.ts#L32)
 
 ___
 
@@ -68,4 +68,4 @@ Creates a new instance
 
 **Returns:** [*BadgeRewardGranter*](badgerewardgranter.md)
 
-Defined in: [src/classes/Granters/BadgeRewardGranter.ts:23](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Granters/BadgeRewardGranter.ts#L23)
+Defined in: [src/classes/Granters/BadgeRewardGranter.ts:24](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Granters/BadgeRewardGranter.ts#L24)

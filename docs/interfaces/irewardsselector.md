@@ -27,7 +27,7 @@ Selects a list of rewards
 
 **Returns:** readonly [*Reward*](../README.md#reward)<string\>[]
 
-Defined in: [src/interfaces/IRewardsSelector.d.ts:10](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardsSelector.d.ts#L10)
+Defined in: [src/interfaces/IRewardsSelector.d.ts:10](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardsSelector.d.ts#L10)
 
 ___
 
@@ -39,4 +39,4 @@ Asynchronously selects a list of rewards
 
 **Returns:** *Promise*<readonly [*Reward*](../README.md#reward)<string\>[]\>
 
-Defined in: [src/interfaces/IRewardsSelector.d.ts:15](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardsSelector.d.ts#L15)
+Defined in: [src/interfaces/IRewardsSelector.d.ts:15](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardsSelector.d.ts#L15)

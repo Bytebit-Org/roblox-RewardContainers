@@ -10,6 +10,7 @@ export class TimeLockedRewardContainer extends BaseRewardContainer {
 	private hasBeenOpened = false;
 
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(

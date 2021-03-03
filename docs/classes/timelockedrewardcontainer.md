@@ -41,11 +41,11 @@ Useful for things like time-locked loot crates
 
 **Returns:** *string*
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L12)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L12)
 
 Inherited from: [BaseRewardContainer](baserewardcontainer.md).[callback](baserewardcontainer.md#callback)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L12)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L12)
 
 ___
 
@@ -58,7 +58,7 @@ Some reward container implementations may open more than once
 
 Inherited from: [BaseRewardContainer](baserewardcontainer.md).[opened](baserewardcontainer.md#opened)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:11](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L11)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:11](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L11)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:47](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/TimeLockedRewardContainer.ts#L47)
+Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:48](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/TimeLockedRewardContainer.ts#L48)
 
 ___
 
@@ -96,7 +96,7 @@ Gets the unlock Unix timestamp
 
 **Returns:** *number*
 
-Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:43](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/TimeLockedRewardContainer.ts#L43)
+Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:44](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/TimeLockedRewardContainer.ts#L44)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:56](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/TimeLockedRewardContainer.ts#L56)
+Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:57](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/TimeLockedRewardContainer.ts#L57)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:60](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/TimeLockedRewardContainer.ts#L60)
+Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:61](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/TimeLockedRewardContainer.ts#L61)
 
 ___
 
@@ -140,4 +140,4 @@ Name | Type | Description |
 
 **Returns:** [*TimeLockedRewardContainer*](timelockedrewardcontainer.md)
 
-Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:31](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/TimeLockedRewardContainer.ts#L31)
+Defined in: [src/classes/Containers/TimeLockedRewardContainer.ts:32](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/TimeLockedRewardContainer.ts#L32)

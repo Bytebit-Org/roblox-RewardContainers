@@ -21,6 +21,7 @@ type RewardsSeriesEntry = {
  */
 export class RepeatingSeriesRewardsSelector implements IRewardsSelector {
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(

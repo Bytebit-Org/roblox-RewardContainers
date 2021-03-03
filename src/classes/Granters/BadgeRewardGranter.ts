@@ -12,6 +12,7 @@ function isABadgeReward(reward: Reward): reward is BadgeReward {
  */
 export class BadgeRewardGranter implements IRewardGranter {
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(private readonly badgeService: BadgeService) {}

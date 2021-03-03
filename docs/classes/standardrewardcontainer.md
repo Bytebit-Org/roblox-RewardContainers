@@ -37,11 +37,11 @@ A basic reward container that can only be opened once but is ready to open as so
 
 **Returns:** *string*
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L12)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L12)
 
 Inherited from: [BaseRewardContainer](baserewardcontainer.md).[callback](baserewardcontainer.md#callback)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L12)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L12)
 
 ___
 
@@ -54,7 +54,7 @@ Some reward container implementations may open more than once
 
 Inherited from: [BaseRewardContainer](baserewardcontainer.md).[opened](baserewardcontainer.md#opened)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:11](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L11)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:11](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L11)
 
 ___
 
@@ -74,7 +74,7 @@ Inherited from: [BaseRewardContainer](baserewardcontainer.md).[rewardedPlayer](b
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/StandardRewardContainer.ts:27](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/StandardRewardContainer.ts#L27)
+Defined in: [src/classes/Containers/StandardRewardContainer.ts:28](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/StandardRewardContainer.ts#L28)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/StandardRewardContainer.ts:31](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/StandardRewardContainer.ts#L31)
+Defined in: [src/classes/Containers/StandardRewardContainer.ts:32](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/StandardRewardContainer.ts#L32)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/StandardRewardContainer.ts:35](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/StandardRewardContainer.ts#L35)
+Defined in: [src/classes/Containers/StandardRewardContainer.ts:36](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/StandardRewardContainer.ts#L36)
 
 ___
 
@@ -117,4 +117,4 @@ Name | Type | Description |
 
 **Returns:** [*StandardRewardContainer*](standardrewardcontainer.md)
 
-Defined in: [src/classes/Containers/StandardRewardContainer.ts:23](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/StandardRewardContainer.ts#L23)
+Defined in: [src/classes/Containers/StandardRewardContainer.ts:24](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/StandardRewardContainer.ts#L24)

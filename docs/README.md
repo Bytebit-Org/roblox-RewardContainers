@@ -38,7 +38,7 @@
 
 A reward that grants a badge
 
-Defined in: [src/types/BadgeReward.d.ts:6](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/types/BadgeReward.d.ts#L6)
+Defined in: [src/types/BadgeReward.d.ts:6](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/types/BadgeReward.d.ts#L6)
 
 ___
 
@@ -60,7 +60,7 @@ Name | Type |
 :------ | :------ |
 `type` | T |
 
-Defined in: [src/types/Reward.d.ts:4](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/types/Reward.d.ts#L4)
+Defined in: [src/types/Reward.d.ts:4](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/types/Reward.d.ts#L4)
 
 ___
 
@@ -76,4 +76,4 @@ Name | Type |
 :------ | :------ |
 `CurrencyType` | *string* |
 
-Defined in: [src/types/VirtualCurrencyReward.d.ts:6](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/types/VirtualCurrencyReward.d.ts#L6)
+Defined in: [src/types/VirtualCurrencyReward.d.ts:6](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/types/VirtualCurrencyReward.d.ts#L6)

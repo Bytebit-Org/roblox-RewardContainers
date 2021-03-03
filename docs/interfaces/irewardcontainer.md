@@ -32,7 +32,7 @@ Some reward container implementations may open more than once
 
 **`argument`** rewards The list of rewards that were granted to the associated player
 
-Defined in: [src/interfaces/IRewardContainer.d.ts:14](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardContainer.d.ts#L14)
+Defined in: [src/interfaces/IRewardContainer.d.ts:14](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardContainer.d.ts#L14)
 
 ## Methods
 
@@ -44,7 +44,7 @@ Returns whether the reward container is ready to open
 
 **Returns:** *boolean*
 
-Defined in: [src/interfaces/IRewardContainer.d.ts:19](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardContainer.d.ts#L19)
+Defined in: [src/interfaces/IRewardContainer.d.ts:19](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardContainer.d.ts#L19)
 
 ___
 
@@ -56,7 +56,7 @@ Runs the process of opening the container, including selecting and granting the 
 
 **Returns:** *void*
 
-Defined in: [src/interfaces/IRewardContainer.d.ts:24](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardContainer.d.ts#L24)
+Defined in: [src/interfaces/IRewardContainer.d.ts:24](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardContainer.d.ts#L24)
 
 ___
 
@@ -68,4 +68,4 @@ Asynchronously runs the process of opening the container, including selecting an
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/interfaces/IRewardContainer.d.ts:29](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardContainer.d.ts#L29)
+Defined in: [src/interfaces/IRewardContainer.d.ts:29](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardContainer.d.ts#L29)

@@ -33,7 +33,7 @@ Name | Type | Description |
 
 **Returns:** *void*
 
-Defined in: [src/interfaces/IRewardGranter.d.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardGranter.d.ts#L12)
+Defined in: [src/interfaces/IRewardGranter.d.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardGranter.d.ts#L12)
 
 ___
 
@@ -52,4 +52,4 @@ Name | Type | Description |
 
 **Returns:** *Promise*<void\>
 
-Defined in: [src/interfaces/IRewardGranter.d.ts:19](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/interfaces/IRewardGranter.d.ts#L19)
+Defined in: [src/interfaces/IRewardGranter.d.ts:19](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/interfaces/IRewardGranter.d.ts#L19)

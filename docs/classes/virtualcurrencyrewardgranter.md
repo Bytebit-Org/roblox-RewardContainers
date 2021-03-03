@@ -43,7 +43,7 @@ Name | Type |
 
 Implementation of: [IRewardGranter](../interfaces/irewardgranter.md)
 
-Defined in: [src/classes/Granters/VirtualCurrencyRewardGranter.ts:40](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Granters/VirtualCurrencyRewardGranter.ts#L40)
+Defined in: [src/classes/Granters/VirtualCurrencyRewardGranter.ts:41](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Granters/VirtualCurrencyRewardGranter.ts#L41)
 
 ___
 
@@ -64,7 +64,7 @@ Name | Type |
 
 Implementation of: [IRewardGranter](../interfaces/irewardgranter.md)
 
-Defined in: [src/classes/Granters/VirtualCurrencyRewardGranter.ts:44](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Granters/VirtualCurrencyRewardGranter.ts#L44)
+Defined in: [src/classes/Granters/VirtualCurrencyRewardGranter.ts:45](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Granters/VirtualCurrencyRewardGranter.ts#L45)
 
 ___
 
@@ -88,4 +88,4 @@ Name | Type | Description |
 
 **Returns:** [*VirtualCurrencyRewardGranter*](virtualcurrencyrewardgranter.md)<CurrencyType\>
 
-Defined in: [src/classes/Granters/VirtualCurrencyRewardGranter.ts:33](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Granters/VirtualCurrencyRewardGranter.ts#L33)
+Defined in: [src/classes/Granters/VirtualCurrencyRewardGranter.ts:34](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Granters/VirtualCurrencyRewardGranter.ts#L34)

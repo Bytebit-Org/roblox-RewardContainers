@@ -28,7 +28,7 @@ Selects a list of rewards
 
 Implementation of: [IRewardsSelector](../interfaces/irewardsselector.md)
 
-Defined in: [src/classes/Selectors/ConstantRewardsSelector.ts:22](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Selectors/ConstantRewardsSelector.ts#L22)
+Defined in: [src/classes/Selectors/ConstantRewardsSelector.ts:23](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Selectors/ConstantRewardsSelector.ts#L23)
 
 ___
 
@@ -42,7 +42,7 @@ Asynchronously selects a list of rewards
 
 Implementation of: [IRewardsSelector](../interfaces/irewardsselector.md)
 
-Defined in: [src/classes/Selectors/ConstantRewardsSelector.ts:26](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Selectors/ConstantRewardsSelector.ts#L26)
+Defined in: [src/classes/Selectors/ConstantRewardsSelector.ts:27](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Selectors/ConstantRewardsSelector.ts#L27)
 
 ___
 
@@ -60,4 +60,4 @@ Name | Type | Description |
 
 **Returns:** [*ConstantRewardsSelector*](constantrewardsselector.md)
 
-Defined in: [src/classes/Selectors/ConstantRewardsSelector.ts:18](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Selectors/ConstantRewardsSelector.ts#L18)
+Defined in: [src/classes/Selectors/ConstantRewardsSelector.ts:19](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Selectors/ConstantRewardsSelector.ts#L19)

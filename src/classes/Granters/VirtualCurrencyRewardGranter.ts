@@ -21,6 +21,7 @@ type AwardVirtualCurrencyAsyncFunction<CurrencyType extends string> = (
  */
 export class VirtualCurrencyRewardGranter<CurrencyType extends string> implements IRewardGranter {
 	/**
+	 * @hidden
 	 * Use the create method instead
 	 */
 	private constructor(private readonly awardVirtualCurrencyAsync: AwardVirtualCurrencyAsyncFunction<CurrencyType>) {}

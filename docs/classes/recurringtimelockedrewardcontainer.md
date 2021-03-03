@@ -59,7 +59,7 @@ Name | Type |
 
 Inherited from: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:58](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L58)
+Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:58](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L58)
 
 ## Properties
 
@@ -73,11 +73,11 @@ Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:58](ht
 
 **Returns:** *string*
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L12)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L12)
 
 Inherited from: [BaseRewardContainer](baserewardcontainer.md).[callback](baserewardcontainer.md#callback)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L12)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:12](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L12)
 
 ___
 
@@ -90,7 +90,7 @@ Some reward container implementations may open more than once
 
 Inherited from: [BaseRewardContainer](baserewardcontainer.md).[opened](baserewardcontainer.md#opened)
 
-Defined in: [src/classes/Containers/BaseRewardContainer.ts:11](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/BaseRewardContainer.ts#L11)
+Defined in: [src/classes/Containers/BaseRewardContainer.ts:11](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/BaseRewardContainer.ts#L11)
 
 ___
 
@@ -110,7 +110,7 @@ Inherited from: [BaseRewardContainer](baserewardcontainer.md).[rewardedPlayer](b
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:134](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L134)
+Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:134](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L134)
 
 ___
 
@@ -128,7 +128,7 @@ Name | Type | Description |
 
 **Returns:** ISignalConnection
 
-Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:143](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L143)
+Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:143](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L143)
 
 ___
 
@@ -140,7 +140,7 @@ Gets the next unlock Unix timestamp
 
 **Returns:** *number*
 
-Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:150](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L150)
+Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:150](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L150)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:154](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L154)
+Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:154](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L154)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 Overrides: [BaseRewardContainer](baserewardcontainer.md)
 
-Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:158](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L158)
+Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:158](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L158)
 
 ___
 
@@ -188,4 +188,4 @@ Name | Type | Description |
 
 **Returns:** [*RecurringTimeLockedRewardContainer*](recurringtimelockedrewardcontainer.md)
 
-Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:100](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/19b2d3b/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L100)
+Defined in: [src/classes/Containers/RecurringTimeLockedRewardContainer.ts:100](https://github.com/Bytebit-Org/roblox-RewardContainers/blob/7501d5d/src/classes/Containers/RecurringTimeLockedRewardContainer.ts#L100)
