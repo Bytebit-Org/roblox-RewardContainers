@@ -1,0 +1,9 @@
+[package]
+name = "bytebit/reward-containers"
+description = "A generic, type-safe library for Roblox game development, written using roblox-ts, for granting rewards to players through containers."
+version = "1.0.1"
+license = "MIT"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]

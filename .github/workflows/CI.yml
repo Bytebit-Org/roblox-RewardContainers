@@ -1,14 +1,14 @@
 name: CI
 
-on: [push]
+on: [push, workflow_dispatch]
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - name: install npm packages
-        uses: bahmutov/npm-install@v1
+      - name: install local npm packages
+        run: npm i --production=false
       - name: run eslint
         run: npm run eslint
   unit-tests:
@@ -24,7 +24,7 @@ jobs:
       - name: install roblox
         run: python install.py "${{ secrets.ROBLOSECURITY }}"
       - name: install roblox-ts
-        run: npm i -g roblox-ts@1.0.0-beta.15
+        run: npm i -g roblox-ts
       - name: install local npm packages
         run: npm i --production=false
       - name: compile typescript code
