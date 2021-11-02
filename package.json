@@ -5,7 +5,7 @@
   "main": "out/init.lua",
   "scripts": {
     "eslint": "npx eslint \"src/**/*.ts\" --max-warnings 0",
-    "prepublishOnly": "rm -rf ./out; rbxtsc",
+    "prepublishOnly": "rm -rf ./out; rbxtsc --type=package",
     "test": "rbxtsc --type=game && rojo build -o ./unit_tests.rbxlx && run-in-roblox ./unit_tests.rbxlx -s ./spec.server.lua",
     "wsl-start-unit-tests": "set -e; rm -rf ./out; rbxtsc --type=game && rojo build -o unit_tests.rbxlx; ./scripts/open-in-windows ./unit_tests.rbxlx"
   },
