@@ -28,7 +28,7 @@ npm i @rbxts/reward-containers
 ### Wally
 [Wally](https://github.com/UpliftGames/wally/) users can install this package by adding the following line to their `Wally.toml` under `[dependencies]`:
 ```
-FiniteStateMachine = "bytebit/reward-containers@1.0.1"
+RewardContainers = "bytebit/reward-containers@1.0.1"
 ```
 
 Then just run `wally install`.
